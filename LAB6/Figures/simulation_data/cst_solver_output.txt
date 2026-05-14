@@ -1,0 +1,195 @@
+_______________________________________________________________________________________________________________________
+    Message output from C:\Users\Mynam\Documents\Codex\2026-05-13\files-mentioned-by-the-user-lab6\cst_work\Lab6_solved
+    Build: 2022.5 Release from 2022-06-03 (change 981760)
+_______________________________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________________________
+ERROR:
+History update failed for command (Step 16):
+Dim fnum As Integer
+Dim m As Integer
+Dim mt As String
+Dim zw As Double
+Dim zl As Double
+Dim item As String
+fnum = FreeFile()
+Open "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\cst_mode_summary.csv" For Output As #fnum
+Print #fnum, "Port,Mode,ModeType,WaveImpedanceOhm,LineImpedanceOhm"
+For m = 1 To 4
+    On Error Resume Next
+    mt = Port.GetModeType(1, m)
+    zw = Port.GetWaveImpedance(1, m)
+    zl = Port.GetLineImpedance(1, m)
+    Print #fnum, "1," & CStr(m) & "," & mt & "," & CStr(zw) & "," & CStr(zl)
+    On Error GoTo 0
+Next m
+Close #fnum
+
+For m = 1 To 3
+    item = "2D/3D Results\Port Modes\Port1\e" & CStr(m)
+    SelectTreeItem(item)
+    Wait 0.5
+    Plot.SetGradientBackground(False)
+    Plot.SetBackgroundColor("1", "1", "1")
+    ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode" & CStr(m) & "_efield.png", 1400, 900
+Next m
+
+SelectTreeItem("Components")
+SelectModelView
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\waveguide_model.png", 1400, 900
+>>> Error text: Expecting an existing scalar var.
+(ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode" & CStr(m) & "_efield.png", 1400, 900)
+
+
+_______________________________________________________________________________________________________________________
+ERROR:
+History update failed for command (Step 16):
+Dim fnum As Integer
+Dim m As Integer
+Dim mt As String
+Dim zw As Double
+Dim zl As Double
+Dim item As String
+Dim fname As String
+fnum = FreeFile()
+Open "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\cst_mode_summary.csv" For Output As #fnum
+Print #fnum, "Port,Mode,ModeType,WaveImpedanceOhm,LineImpedanceOhm"
+For m = 1 To 4
+    On Error Resume Next
+    mt = Port.GetModeType(1, m)
+    zw = Port.GetWaveImpedance(1, m)
+    zl = Port.GetLineImpedance(1, m)
+    Print #fnum, "1," & CStr(m) & "," & mt & "," & CStr(zw) & "," & CStr(zl)
+    On Error GoTo 0
+Next m
+Close #fnum
+
+For m = 1 To 3
+    item = "2D/3D Results\Port Modes\Port1\e" & CStr(m)
+    SelectTreeItem(item)
+    Wait 0.5
+    Plot.SetGradientBackground(False)
+    Plot.SetBackgroundColor("1", "1", "1")
+    fname = "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode" & CStr(m) & "_efield.png"
+    ExportImageToFile fname, 1400, 900
+Next m
+
+SelectTreeItem("Components")
+SelectModelView
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\waveguide_model.png", 1400, 900
+>>> Error text: Expecting an existing scalar var.
+(ExportImageToFile fname, 1400, 900)
+
+
+_______________________________________________________________________________________________________________________
+ERROR:
+History update failed for command (Step 16):
+Dim fnum As Integer
+Dim m As Integer
+Dim mt As String
+Dim zw As Double
+Dim zl As Double
+Dim item As String
+Dim fname As String
+fnum = FreeFile()
+Open "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\cst_mode_summary.csv" For Output As #fnum
+Print #fnum, "Port,Mode,ModeType,WaveImpedanceOhm,LineImpedanceOhm"
+For m = 1 To 4
+    On Error Resume Next
+    mt = Port.GetModeType(1, m)
+    zw = Port.GetWaveImpedance(1, m)
+    zl = Port.GetLineImpedance(1, m)
+    Print #fnum, "1," & CStr(m) & "," & mt & "," & CStr(zw) & "," & CStr(zl)
+    On Error GoTo 0
+Next m
+Close #fnum
+
+SelectTreeItem("2D/3D Results\Port Modes\Port1\e1")
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode1_efield.png", 1400, 900
+
+SelectTreeItem("2D/3D Results\Port Modes\Port1\e2")
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode2_efield.png", 1400, 900
+
+SelectTreeItem("2D/3D Results\Port Modes\Port1\e3")
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode3_efield.png", 1400, 900
+
+SelectTreeItem("Components")
+SelectModelView
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\waveguide_model.png", 1400, 900
+>>> Error text: Expecting an existing scalar var.
+(ExportImageToFile "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode1_efield.png", 1400, 900)
+
+
+_______________________________________________________________________________________________________________________
+ERROR:
+History update failed for command (Step 16):
+Dim fnum As Integer
+Dim m As Integer
+Dim mt As String
+Dim zw As Double
+Dim zl As Double
+Dim item As String
+Dim fname As String
+fnum = FreeFile()
+Open "C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\cst_mode_summary.csv" For Output As #fnum
+Print #fnum, "Port,Mode,ModeType,WaveImpedanceOhm,LineImpedanceOhm"
+For m = 1 To 4
+    On Error Resume Next
+    mt = Port.GetModeType(1, m)
+    zw = Port.GetWaveImpedance(1, m)
+    zl = Port.GetLineImpedance(1, m)
+    Print #fnum, "1," & CStr(m) & "," & mt & "," & CStr(zw) & "," & CStr(zl)
+    On Error GoTo 0
+Next m
+Close #fnum
+
+SelectTreeItem("2D/3D Results\Port Modes\Port1\e1")
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile("C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode1_efield.png", 1400, 900)
+
+SelectTreeItem("2D/3D Results\Port Modes\Port1\e2")
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile("C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode2_efield.png", 1400, 900)
+
+SelectTreeItem("2D/3D Results\Port Modes\Port1\e3")
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile("C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode3_efield.png", 1400, 900)
+
+SelectTreeItem("Components")
+SelectModelView
+Wait 0.5
+Plot.SetGradientBackground(False)
+Plot.SetBackgroundColor("1", "1", "1")
+ExportImageToFile("C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\waveguide_model.png", 1400, 900)
+>>> Error text: Expecting an existing scalar var.
+(ExportImageToFile("C:\\Users\\Mynam\\Documents\\Codex\\2026-05-13\\files-mentioned-by-the-user-lab6\\cst_outputs\\port1_mode1_efield.png", 1400, 900))
+
+
+_______________________________________________________________________________________________________________________
+QUESTION:
+Do you want to save changes to 'Lab6_solved.cst'?
+Auto answered with "Yes"

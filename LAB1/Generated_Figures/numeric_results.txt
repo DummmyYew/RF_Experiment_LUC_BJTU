@@ -1,0 +1,6 @@
+Sampling frequency (Hz): 5.000000e+09
+Mixer difference frequency (Hz): 7.000000e+07
+Mixer sum frequency (Hz): 2.700000e+08
+RC cutoff frequency (Hz): 1.273240e+08
+RL cutoff frequency (Hz): 1.591549e+08
+RLC resonant frequency (Hz): 1.423525e+08

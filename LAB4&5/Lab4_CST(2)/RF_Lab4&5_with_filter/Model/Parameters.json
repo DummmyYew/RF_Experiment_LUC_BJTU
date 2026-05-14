@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "expr": "20",
+            "name": "w_substrate",
+            "value": "20"
+        },
+        {
+            "expr": "30",
+            "name": "length",
+            "value": "30"
+        },
+        {
+            "expr": "1",
+            "name": "h",
+            "value": "1"
+        },
+        {
+            "expr": "0.1",
+            "name": "G_PEC",
+            "value": "0.1"
+        },
+        {
+            "expr": "1.79",
+            "name": "w",
+            "value": "1.79"
+        }
+    ],
+    "version": 1
+}

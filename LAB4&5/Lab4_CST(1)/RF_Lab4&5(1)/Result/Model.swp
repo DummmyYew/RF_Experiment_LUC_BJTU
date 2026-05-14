@@ -1,0 +1,157 @@
+13/May/2026 17:20:40  Some of the upcoming parameter combinations were already performed previously and will be skipped.
+                      Potential changes in the result settings like Template Based Post Processing are not taken into account. The feature can be deactivated via "Parameter Sweep -> Options..."
+13/May/2026 17:20:40  ==========================================================================
+                      Sequence: Sequence 1
+                      ==========================================================================
+
+13/May/2026 17:20:40  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.2
+13/May/2026 17:20:40  
+                      Structure update: Successful
+13/May/2026 17:20:54            Solver: Successful
+13/May/2026 17:20:54       Solver time: 0 hours, 0 min., 14 sec.
+13/May/2026 17:20:54  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.3
+13/May/2026 17:20:55  
+                      Structure update: Successful
+13/May/2026 17:21:06            Solver: Successful (with moved mesh)
+13/May/2026 17:21:06       Solver time: 0 hours, 0 min., 11 sec.
+13/May/2026 17:21:06  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.4
+13/May/2026 17:21:07  
+                      Structure update: Successful
+13/May/2026 17:21:21            Solver: Successful
+13/May/2026 17:21:21       Solver time: 0 hours, 0 min., 14 sec.
+13/May/2026 17:21:21  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.5
+13/May/2026 17:21:21  
+                      Simulation for this parameter combination has already been performed (Run ID found).
+13/May/2026 17:21:21  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.6
+13/May/2026 17:21:22  
+                      Structure update: Successful
+13/May/2026 17:21:36            Solver: Successful
+13/May/2026 17:21:36       Solver time: 0 hours, 0 min., 14 sec.
+13/May/2026 17:21:36  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.7
+13/May/2026 17:21:37  
+                      Structure update: Successful
+13/May/2026 17:21:50            Solver: Successful
+13/May/2026 17:21:50       Solver time: 0 hours, 0 min., 13 sec.
+13/May/2026 17:21:50  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.8
+13/May/2026 17:21:51  
+                      Structure update: Successful
+13/May/2026 17:22:05            Solver: Successful
+13/May/2026 17:22:05       Solver time: 0 hours, 0 min., 14 sec.
+13/May/2026 17:22:05  --------------------------------------------------------------------------
+
+13/May/2026 17:22:05  ==========================================================================
+                      Sequence: Sequence 2
+                      ==========================================================================
+
+13/May/2026 17:22:05  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.7
+13/May/2026 17:22:05  
+                      Simulation for this parameter data has already been performed.
+13/May/2026 17:22:05  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.71
+13/May/2026 17:22:06  
+                      Structure update: Successful
+13/May/2026 17:22:15            Solver: Successful (with moved mesh)
+13/May/2026 17:22:15       Solver time: 0 hours, 0 min., 9 sec.
+13/May/2026 17:22:15  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.72
+13/May/2026 17:22:16  
+                      Structure update: Successful
+13/May/2026 17:22:26            Solver: Successful (with moved mesh)
+13/May/2026 17:22:26       Solver time: 0 hours, 0 min., 10 sec.
+13/May/2026 17:22:26  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.73
+13/May/2026 17:22:27  
+                      Structure update: Successful
+13/May/2026 17:22:36            Solver: Successful (with moved mesh)
+13/May/2026 17:22:36       Solver time: 0 hours, 0 min., 9 sec.
+13/May/2026 17:22:36  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.74
+13/May/2026 17:22:37  
+                      Structure update: Successful
+13/May/2026 17:22:47            Solver: Successful (with moved mesh)
+13/May/2026 17:22:47       Solver time: 0 hours, 0 min., 10 sec.
+13/May/2026 17:22:47  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.75
+13/May/2026 17:22:48  
+                      Structure update: Successful
+13/May/2026 17:22:56            Solver: Successful (with moved mesh)
+13/May/2026 17:22:56       Solver time: 0 hours, 0 min., 8 sec.
+13/May/2026 17:22:56  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.76
+13/May/2026 17:22:57  
+                      Structure update: Successful
+13/May/2026 17:23:06            Solver: Successful (with moved mesh)
+13/May/2026 17:23:06       Solver time: 0 hours, 0 min., 9 sec.
+13/May/2026 17:23:06  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.77
+13/May/2026 17:23:06  
+                      Structure update: Successful
+13/May/2026 17:23:15            Solver: Successful (with moved mesh)
+13/May/2026 17:23:15       Solver time: 0 hours, 0 min., 8 sec.
+13/May/2026 17:23:15  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.78
+13/May/2026 17:23:16  
+                      Structure update: Successful
+13/May/2026 17:23:25            Solver: Successful (with moved mesh)
+13/May/2026 17:23:25       Solver time: 0 hours, 0 min., 9 sec.
+13/May/2026 17:23:25  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.79
+13/May/2026 17:23:25  
+                      Structure update: Successful
+13/May/2026 17:23:34            Solver: Successful (with moved mesh)
+13/May/2026 17:23:34       Solver time: 0 hours, 0 min., 9 sec.
+13/May/2026 17:23:34  --------------------------------------------------------------------------
+                      Parameter Values: 
+                      
+                         w = 1.8
+13/May/2026 17:23:34  
+                      Simulation for this parameter data has already been performed.
+13/May/2026 17:23:34  --------------------------------------------------------------------------
+13/May/2026 17:23:34  1 parameter combinations were skipped in the parameter sweep because they were already performed previously.
+                      2 parameter combinations were skipped because they were defined multiple times in the current sweep.
+13/May/2026 17:23:34  
+                      ==========================================================================
+                      Total evaluation time: 0 hours, 2 min., 41 sec.
+                      ==========================================================================

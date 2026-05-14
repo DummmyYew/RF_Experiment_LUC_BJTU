@@ -1,0 +1,100 @@
+----------------------------------------------------------------------
+  Total number of passes   :	1
+  Mesh adaptation pass     :	1
+  Simulation point         :	10 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	0 s
+  Mesh refinement time     :	1 s
+  Number of mesh cells     :	2786
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	2
+  Mesh adaptation pass     :	2
+  Simulation point         :	10 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	0 s
+  Mesh refinement time     :	1 s
+  Number of mesh cells     :	3662
+  Delta calculation        
+  All S-Parameters         :	0.0862837
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	3
+  Mesh adaptation pass     :	3
+  Simulation point         :	10 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	0 s
+  Mesh refinement time     :	1 s
+  Number of mesh cells     :	4448
+  Delta calculation        
+  All S-Parameters         :	0.0918978
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	4
+  Mesh adaptation pass     :	4
+  Simulation point         :	10 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	0 s
+  Mesh refinement time     :	2 s
+  Number of mesh cells     :	6393
+  Delta calculation        
+  All S-Parameters         :	0.0318484
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	5
+  Mesh adaptation pass     :	5
+  Simulation point         :	10 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	1 s
+  Mesh refinement time     :	0 s
+  Number of mesh cells     :	9624
+  Delta calculation        
+  All S-Parameters         :	0.0640233
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	6
+  Mesh adaptation pass     :	6
+  Simulation point         :	10 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	2 s
+  Mesh refinement time     :	0 s
+  Number of mesh cells     :	14344
+  Delta calculation        
+  All S-Parameters         :	0.0241419
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	7
+  Mesh adaptation pass     :	7
+  Simulation point         :	10 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	1 s
+  Mesh refinement time     :	2 s
+  Number of mesh cells     :	20456
+  Delta calculation        
+  All S-Parameters         :	0.0237276
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	8
+  Mesh adaptation pass     :	8
+  Simulation point         :	10 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	3 s
+  Mesh refinement time     :	0 s
+  Number of mesh cells     :	27897
+  Delta calculation        
+  All S-Parameters         :	0.0114504
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total solver time        :	17 s
+
+  Desired accuracy limit reached, mesh adaptation stopped.
+----------------------------------------------------------------------
+

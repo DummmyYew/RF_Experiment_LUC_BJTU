@@ -1,0 +1,88 @@
+{
+  "report": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\RF_Lab3_Waveguide_Structures_Report.docx",
+  "figures_folder": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures",
+  "copied_figures": [
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\01_1D_port_signal.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig01_time_domain_port_signals.png",
+      "caption": "Time-domain port signals from the four-port CST transient simulation."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\02_1D_s_parameters.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig02_scattering_parameters_magnitude.png",
+      "caption": "Magnitude of the simulated four-port scattering parameters over 95-105 GHz."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\03_1D_reference_impedance.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig03_te10_reference_impedance_real_part.png",
+      "caption": "Real part of the modal reference impedance for the TE10 waveguide ports."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\04_1D_Balance.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig04_s_parameter_energy_balance.png",
+      "caption": "S-parameter energy balance for each port excitation."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\05_1D_Energy.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig05_transient_field_energy_decay.png",
+      "caption": "Transient field energy decay used to judge time-domain convergence."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\06_2D3D_port1_e1.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig06_port1_te10_mode_profile_100ghz.png",
+      "caption": "Port 1 TE10 electric-field mode profile at 100 GHz."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\07_2D3D_port2_e1.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig07_port2_te10_mode_profile_100ghz.png",
+      "caption": "Port 2 TE10 electric-field mode profile at 100 GHz."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\08_2D3D_por43_e1.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig08_port3_te10_mode_profile_100ghz.png",
+      "caption": "Port 3 TE10 electric-field mode profile at 100 GHz."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\09_2D3D_por4_e1.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig09_port4_te10_mode_profile_100ghz.png",
+      "caption": "Port 4 TE10 electric-field mode profile at 100 GHz."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\10_e_field_f_equals_100.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig10_e_field_vector_distribution_100ghz.png",
+      "caption": "Three-dimensional electric-field vector distribution at 100 GHz."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\11_efield_cutting_plane01.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig11_e_field_cut_plane_01_100ghz.png",
+      "caption": "Electric-field magnitude on the first longitudinal cutting plane at 100 GHz."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\12_efield_cutting_plane02.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig12_e_field_cut_plane_02_100ghz.png",
+      "caption": "Electric-field magnitude on the second cutting plane through the tee junction."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\13_efield_cutting_plane03.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig13_e_field_cut_plane_03_100ghz.png",
+      "caption": "Electric-field magnitude on the third cutting plane through the side-arm region."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\14_efield_cutting_plane04.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig14_e_field_cut_plane_04_100ghz.png",
+      "caption": "Electric-field magnitude on the fourth cutting plane through the vertical arm."
+    },
+    {
+      "source": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\仿真结果图\\15_efield_cutting_plane05.png",
+      "target": "C:\\Users\\Mynam\\Desktop\\RF实验\\LAB3\\Figures\\fig15_e_field_cut_plane_05_100ghz.png",
+      "caption": "Electric-field magnitude on the fifth cutting plane showing the collinear guide."
+    }
+  ],
+  "verification": {
+    "exists": true,
+    "bytes": 840379,
+    "media_count": 15,
+    "has_omml_equations": true,
+    "times_new_roman_mentions": 465
+  }
+}

@@ -1,0 +1,47 @@
+[17:23:26] -------- TetMesher Log --------
+[17:23:26] Build Number: 20220603; ID: 2022.5 Release from 2022-06-03 (change 981760); Date: 2022-06-03; ACIS version: 31.0.1, SPAresabs & SPAresnor: 1e-06, 1e-10; Problem class: High Frequency
+[17:23:26] - Reading information
+[17:23:26] - Building single body
+[17:23:26] Found 26 faces.
+[17:23:26] Choosing Advanced Boolean Loop...
+[17:23:26] Volume Attributes enabled
+[17:23:26] Attaching Volume Attributes
+[17:23:26] Sorted out 3 special bodies.
+[17:23:26] Processing 3 entities.
+[17:23:26] Queue Size: 1
+[17:23:26] Combining solid component1:Ground_Plane and solid component1:Trace (Pair #1 out of 1)
+[17:23:26] Processing 2 entities.
+[17:23:26] Queue Size: 1
+[17:23:26] Adding Compound Body to solid component1:dielectric_FR4 (Pair #1 out of 1)
+[17:23:26] Exiting Boolean Unite Module.
+[17:23:26] Added Compound Body (ID: 55, 28, 82) to model
+[17:23:26] Added background material (ID: 1) to model
+[17:23:26] Added waveguide port 1 (ID: 109) to model
+[17:23:26] Added waveguide port 2 (ID: 119) to model
+[17:23:26] Matching geometrical entities by types...
+Matching geometrical entities by IDs...
+Matching geometrical entities by topology...
+Furthest distance between matched entities: 0.005
+
+[17:23:26] - moving mesh
+[17:23:26]  project mesh
+
+[17:23:26]  3 trials
+
+[17:23:26] Running model geometry simplification... 
+[17:23:26] Model geometry simplification: 0 seconds
+[17:23:26] Writing topot.tet...
+[17:23:26] Done (topot.tet)
+[17:23:26] Writing moegeom.tet ...
+[17:23:26] Done (moegeom.tet) 
+[17:23:26] Mesh curving:
+[17:23:26]     available cores:   14
+[17:23:26]     number of threads: 14
+[17:23:26] Curving elements
+[17:23:26]  Curve elements, order = 3
+
+[17:23:26] 
+#### Feedback Report Begins ####
+#### Feedback Report Ends ####
+
+[17:23:26] Done

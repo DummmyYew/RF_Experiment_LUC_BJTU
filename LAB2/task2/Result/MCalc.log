@@ -1,0 +1,1792 @@
+Frontend-Node:  =======================================================================
+                FPBA has been activated in order to calculate connectivity information.
+                =======================================================================
+
+==========================================================================
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0, sockets = 0
+ - num cores available   : 14
+ - num accessible procs          : 14
+ - num logical procs             : 14
+ - affinity (main thread)        : 11111111111111
+ - sockets                       : 0
+ - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - affinity                      : 11111111111111
+ - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - skip pinning: + allowed number of sockets = available number of sockets
+                 + hyperthreading off
+==========================================================================
+
+===================================================================================================
+Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+Workflow: PBA matrix coefficients
+Operation: [acis, fpba, meshfill, bg, port-path, port-domain, tst, tst-nextgen, coeff, surface-imp]
+Architecture: Windows, ID: AMD64
+System Windows-64bit
+Using processor group 0/1
+HEX Mesh information:
+Hex mesh: global: [hxr o(0 | 0 | 0) s(23 | 13 | 4) np (no TSTs): 1196] 
+===================================================================================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026 May 13 (Wed):  19:49:29
+started: calculating matrix coefficients
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+================================================================
+Matrix computation (PBA)
+	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+	[GPU acceleration: off (by user)]
+Version 2022.5 (build 20220603)
+PBA version 2021082322
+Sub-Workflow: FARM-1x1-TST2
+Workflow updated: -
+2026 May 13 (Wed):  19:49:29
+================================================================
+
+----------------------------------------------
+Used point accuracy enhancement value: 75.00%.
+----------------------------------------------
+
+************************************************************************************************
+General settings
+	PBA version: default
+------------------------------------------------------------------------------------------------
+Geometry processor: default
+	Geo accuracy: 75.000000
+	Watertightness check: true
+	Self intersection check: false
+	Inheritance (all): false
+	Normal dominance (all): false
+	Normal dominance (ports): false
+	Flanges hollow: true
+	One shape per flange: false
+	Multi threading: true
+		max # of threads used: 14
+		requested max # of threads: 14
+		representation: indexed
+		method: multi thread
+		retry: no
+------------------------------------------------------------------------------------------------
+Connectivity settings
+	Workflow selection: 0
+	Workflow version: 20180101
+	Gap detection: true
+	Gap detection version: 2
+	TST version: 2
+	QQ workflow: true
+	CoCo workflow: true
+	Legacy topology: false
+	Connectivity check: false
+------------------------------------------------------------------------------------------------
+************************************************************************************************
+
+------------------------------------------------------------------------------------------------
+Geometry processing log
+	PEC background is represented by CAD geometry: false
+	Background shape: used
+	Multithread portion: 100.00
+	Number of CAD shapes: 2
+	Number of lumps: 0
+------------------------------------------------------------------------------------------------
+===================================================================================================
+== CST Matrix Calculation Priority Log
+===================================================================================================
+ 
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Priority-group: 1, shape 3: </cst/Boundaries/> Low^X,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 4: </cst/Boundaries/> Low^Y,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 5: </cst/Boundaries/> Low^Z,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 6: </cst/Boundaries/> Up^X,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 7: </cst/Boundaries/> Up^Y,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 8: </cst/Boundaries/> Up^Z,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 2, shape 1: C1:Main_Outer,  material: PEC,    user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec,    shape-attributes: solid,   scheme type:FIT_TD
+Priority-group: 2, shape 2: C1:Side_Outer,  material: PEC,    user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec,    shape-attributes: outside-mesh.solid,  scheme type:FIT_TD
+ 
+===================================================================================================
+ 
+FARM allocation scheme: BBM
+Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+
+----------------------
+Acceleration mode: CPU
+----------------------
+
+Port homogenization method: M2H point index deviation
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+FARM/Meshfill cache is set to 8 (local FI domains: 1, dynamic: false)
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+=============================================================
+Hex cell analyzer settings:
+	max number of E fields per mesh edge: 2
+	max number of H fields per mesh face: 4
+	supporting dual grid: false
+	performance improvement: ROI limit: true
+	performance improvement: ROI threshold: 2
+	performance improvement: single topology extraction: true
+	performance improvement: pre-categorize cell volume: true
+	periodic align: 0
+	periodic cells: true
+	homogenization version: pid
+=============================================================
+
+------------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+settings for port mode calculation
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PBA fill limit is applied in inverse mode.
+PBA fill limit is applied on faces filled with at least 99.00% metal material.
+--------------------------------------------------------------
+detailed accuracy settings:
+--------------------------------------------------------------
+augmented fill limit:       true
+augmented fill limit value: 99.00
+automatic fill limit:       true
+early fill limit:           true
+inverse fill limit:         true
+model complexity:           0.00
+legacy 2015:                false
+fixed point accuracy:       false
+minimum point accuracy:     0
+mesh step inheritance:      false
+accuracy mode:              
+------------------------------------------------------------------------------
+
+--------------------------------------
+Glued 0 metal grid points in port area
+--------------------------------------
+
+=================================
+Finished matrix computation (PBA)
+=================================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2026 May 13 (Wed):  19:49:30
+Resource usage for calculating matrix coefficients:
+	Runtime                          00:00:00.00346
+	Peak Memory Usage:                        30 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+Frontend-Node:  =======================================================================
+                FPBA has been activated in order to calculate connectivity information.
+                =======================================================================
+
+==========================================================================
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0, sockets = 0
+ - num cores available   : 14
+ - num accessible procs          : 14
+ - num logical procs             : 14
+ - affinity (main thread)        : 11111111111111
+ - sockets                       : 0
+ - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - affinity                      : 11111111111111
+ - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - skip pinning: + allowed number of sockets = available number of sockets
+                 + hyperthreading off
+==========================================================================
+
+===================================================================================================
+Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+Workflow: PBA matrix coefficients
+Operation: [acis, fpba, meshfill, bg, port-path, port-domain, tst, tst-nextgen, coeff, surface-imp]
+Architecture: Windows, ID: AMD64
+System Windows-64bit
+Using processor group 0/1
+HEX Mesh information:
+Hex mesh: global: [hxr o(0 | 0 | 0) s(23 | 13 | 4) np (no TSTs): 1196] 
+===================================================================================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026 May 13 (Wed):  19:49:31
+started: calculating matrix coefficients
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+================================================================
+Matrix computation (PBA)
+	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+	[GPU acceleration: off (by user)]
+Version 2022.5 (build 20220603)
+PBA version 2021082322
+Sub-Workflow: FARM-1x1-TST2
+Workflow updated: -
+2026 May 13 (Wed):  19:49:31
+================================================================
+
+----------------------------------------------
+Used point accuracy enhancement value: 75.00%.
+----------------------------------------------
+
+************************************************************************************************
+General settings
+	PBA version: default
+------------------------------------------------------------------------------------------------
+Geometry processor: default
+	Geo accuracy: 75.000000
+	Watertightness check: true
+	Self intersection check: false
+	Inheritance (all): false
+	Normal dominance (all): false
+	Normal dominance (ports): false
+	Flanges hollow: true
+	One shape per flange: false
+	Multi threading: true
+		max # of threads used: 14
+		requested max # of threads: 14
+		representation: indexed
+		method: multi thread
+		retry: no
+------------------------------------------------------------------------------------------------
+Connectivity settings
+	Workflow selection: 0
+	Workflow version: 20180101
+	Gap detection: true
+	Gap detection version: 2
+	TST version: 2
+	QQ workflow: true
+	CoCo workflow: true
+	Legacy topology: false
+	Connectivity check: false
+------------------------------------------------------------------------------------------------
+************************************************************************************************
+
+------------------------------------------------------------------------------------------------
+Geometry processing log
+	PEC background is represented by CAD geometry: false
+	Background shape: used
+	Multithread portion: 100.00
+	Number of CAD shapes: 2
+	Number of lumps: 0
+------------------------------------------------------------------------------------------------
+===================================================================================================
+== CST Matrix Calculation Priority Log
+===================================================================================================
+ 
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Priority-group: 1, shape 3: </cst/Boundaries/> Low^X,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 4: </cst/Boundaries/> Low^Y,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 5: </cst/Boundaries/> Low^Z,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 6: </cst/Boundaries/> Up^X,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 7: </cst/Boundaries/> Up^Y,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 8: </cst/Boundaries/> Up^Z,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 2, shape 1: C1:Main_Outer,  material: PEC,    user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec,    shape-attributes: solid,   scheme type:FIT_TD
+Priority-group: 2, shape 2: C1:Side_Outer,  material: PEC,    user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec,    shape-attributes: outside-mesh.solid,  scheme type:FIT_TD
+ 
+===================================================================================================
+ 
+FARM allocation scheme: BBM
+Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+
+----------------------
+Acceleration mode: CPU
+----------------------
+
+Port homogenization method: M2H point index deviation
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+FARM/Meshfill cache is set to 8 (local FI domains: 1, dynamic: false)
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+=============================================================
+Hex cell analyzer settings:
+	max number of E fields per mesh edge: 2
+	max number of H fields per mesh face: 4
+	supporting dual grid: false
+	performance improvement: ROI limit: true
+	performance improvement: ROI threshold: 2
+	performance improvement: single topology extraction: true
+	performance improvement: pre-categorize cell volume: true
+	periodic align: 0
+	periodic cells: true
+	homogenization version: pid
+=============================================================
+
+------------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+settings for port mode calculation
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PBA fill limit is applied in inverse mode.
+PBA fill limit is applied on faces filled with at least 99.00% metal material.
+--------------------------------------------------------------
+detailed accuracy settings:
+--------------------------------------------------------------
+augmented fill limit:       true
+augmented fill limit value: 99.00
+automatic fill limit:       true
+early fill limit:           true
+inverse fill limit:         true
+model complexity:           0.00
+legacy 2015:                false
+fixed point accuracy:       false
+minimum point accuracy:     0
+mesh step inheritance:      false
+accuracy mode:              
+------------------------------------------------------------------------------
+
+--------------------------------------
+Glued 0 metal grid points in port area
+--------------------------------------
+
+=================================
+Finished matrix computation (PBA)
+=================================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2026 May 13 (Wed):  19:49:31
+Resource usage for calculating matrix coefficients:
+	Runtime                          00:00:00.00418
+	Peak Memory Usage:                        30 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+Frontend-Node:  =======================================================================
+                FPBA has been activated in order to calculate connectivity information.
+                =======================================================================
+
+==========================================================================
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0, sockets = 0
+ - num cores available   : 14
+ - num accessible procs          : 14
+ - num logical procs             : 14
+ - affinity (main thread)        : 11111111111111
+ - sockets                       : 0
+ - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - affinity                      : 11111111111111
+ - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - skip pinning: + allowed number of sockets = available number of sockets
+                 + hyperthreading off
+==========================================================================
+
+===================================================================================================
+Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+Workflow: PBA matrix coefficients
+Operation: [acis, fpba, meshfill, bg, port-path, port-domain, tst, tst-nextgen, coeff, surface-imp]
+Architecture: Windows, ID: AMD64
+System Windows-64bit
+Using processor group 0/1
+HEX Mesh information:
+Hex mesh: global: [hxr o(0 | 0 | 0) s(4 | 13 | 20) np (no TSTs): 1040] 
+===================================================================================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026 May 13 (Wed):  19:49:32
+started: calculating matrix coefficients
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+================================================================
+Matrix computation (PBA)
+	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+	[GPU acceleration: off (by user)]
+Version 2022.5 (build 20220603)
+PBA version 2021082322
+Sub-Workflow: FARM-1x1-TST2
+Workflow updated: -
+2026 May 13 (Wed):  19:49:32
+================================================================
+
+----------------------------------------------
+Used point accuracy enhancement value: 75.00%.
+----------------------------------------------
+
+************************************************************************************************
+General settings
+	PBA version: default
+------------------------------------------------------------------------------------------------
+Geometry processor: default
+	Geo accuracy: 75.000000
+	Watertightness check: true
+	Self intersection check: false
+	Inheritance (all): false
+	Normal dominance (all): false
+	Normal dominance (ports): false
+	Flanges hollow: true
+	One shape per flange: false
+	Multi threading: true
+		max # of threads used: 14
+		requested max # of threads: 14
+		representation: indexed
+		method: multi thread
+		retry: no
+------------------------------------------------------------------------------------------------
+Connectivity settings
+	Workflow selection: 0
+	Workflow version: 20180101
+	Gap detection: true
+	Gap detection version: 2
+	TST version: 2
+	QQ workflow: true
+	CoCo workflow: true
+	Legacy topology: false
+	Connectivity check: false
+------------------------------------------------------------------------------------------------
+************************************************************************************************
+
+------------------------------------------------------------------------------------------------
+Geometry processing log
+	PEC background is represented by CAD geometry: false
+	Background shape: used
+	Multithread portion: 100.00
+	Number of CAD shapes: 2
+	Number of lumps: 0
+------------------------------------------------------------------------------------------------
+===================================================================================================
+== CST Matrix Calculation Priority Log
+===================================================================================================
+ 
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Priority-group: 1, shape 3: </cst/Boundaries/> Low^X,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 4: </cst/Boundaries/> Low^Y,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 5: </cst/Boundaries/> Low^Z,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 6: </cst/Boundaries/> Up^X,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 7: </cst/Boundaries/> Up^Y,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 8: </cst/Boundaries/> Up^Z,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 2, shape 1: C1:Main_Outer,  material: PEC,    user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec,    shape-attributes: outside-mesh.solid,  scheme type:FIT_TD
+Priority-group: 2, shape 2: C1:Side_Outer,  material: PEC,    user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec,    shape-attributes: solid,   scheme type:FIT_TD
+ 
+===================================================================================================
+ 
+FARM allocation scheme: BBM
+Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+
+----------------------
+Acceleration mode: CPU
+----------------------
+
+Port homogenization method: M2H point index deviation
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+FARM/Meshfill cache is set to 8 (local FI domains: 1, dynamic: false)
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+=============================================================
+Hex cell analyzer settings:
+	max number of E fields per mesh edge: 2
+	max number of H fields per mesh face: 4
+	supporting dual grid: false
+	performance improvement: ROI limit: true
+	performance improvement: ROI threshold: 2
+	performance improvement: single topology extraction: true
+	performance improvement: pre-categorize cell volume: true
+	periodic align: 0
+	periodic cells: true
+	homogenization version: pid
+=============================================================
+
+------------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+settings for port mode calculation
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PBA fill limit is applied in inverse mode.
+PBA fill limit is applied on faces filled with at least 99.00% metal material.
+--------------------------------------------------------------
+detailed accuracy settings:
+--------------------------------------------------------------
+augmented fill limit:       true
+augmented fill limit value: 99.00
+automatic fill limit:       true
+early fill limit:           true
+inverse fill limit:         true
+model complexity:           0.00
+legacy 2015:                false
+fixed point accuracy:       false
+minimum point accuracy:     0
+mesh step inheritance:      false
+accuracy mode:              
+------------------------------------------------------------------------------
+
+--------------------------------------
+Glued 0 metal grid points in port area
+--------------------------------------
+
+=================================
+Finished matrix computation (PBA)
+=================================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2026 May 13 (Wed):  19:49:33
+Resource usage for calculating matrix coefficients:
+	Runtime                          00:00:00.00283
+	Peak Memory Usage:                        30 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+Frontend-Node:  =======================================================================
+                FPBA has been activated in order to calculate connectivity information.
+                =======================================================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026 May 13 (Wed):  19:49:35
+started: parallelization control
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+==========================================================================
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0, sockets = 0
+ - num cores available   : 14
+ - num accessible procs          : 14
+ - num logical procs             : 14
+ - affinity (main thread)        : 11111111111111
+ - sockets                       : 0
+ - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - affinity                      : 11111111111111
+ - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+ - skip pinning: + allowed number of sockets = available number of sockets
+                 + hyperthreading off
+==========================================================================
+
+===========================================================================
+Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+Workflow: QQ-Facets
+Operation: [acis, fpba, bg]
+Architecture: Windows, ID: AMD64
+System Windows-64bit
+Using processor group 0/1
+HEX Mesh information:
+Hex mesh: global: [hxr o(0 | 0 | 0) s(62 | 35 | 102) np (no TSTs): 221340] 
+===========================================================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026 May 13 (Wed):  19:49:35
+started: processing CAD model
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+========================================================================
+Processing CAD model (for field results)
+	[Improved internal geometry representation]
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version 2022.5 (build 20220603)
+PBA version 2021082322
+Sub-Workflow: Facets-QQ-GEX
+Workflow updated: -
+2026 May 13 (Wed):  19:49:35
+========================================================================
+
+===========================================
+Finished CAD processing (for field results)
+===========================================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2026 May 13 (Wed):  19:49:36
+Resource usage for processing CAD model:
+	Runtime                 00:00:00.00212
+	Peak Memory Usage:               30 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026 May 13 (Wed):  19:49:36
+started: processing CAD model
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+========================================================================
+Processing CAD model
+	[Improved internal geometry representation]
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version 2022.5 (build 20220603)
+PBA version 2021082322
+Sub-Workflow: Facets-QQ-GEX
+Workflow updated: -
+2026 May 13 (Wed):  19:49:36
+========================================================================
+
+---------------------------------------------
+Used point accuracy enhancement value: 4.00%.
+---------------------------------------------
+
+=============================================================================
+Mesh statistics:
+-----------------------------------------------------------------------------
+Minimum edge length (x): 0.0833 @ mesh line 10 (x)
+Maximum edge length (x): 0.187 @ mesh line 58 (x)
+Minimum face area (x): 0.00694 @ mesh lines 26 | 63 (y | z)
+Maximum face area (x): 0.0347 @ mesh lines 16 | 80 (y | z)
+Minimum edge length (y): 0.0833 @ mesh line 26 (y)
+Maximum edge length (y): 0.184 @ mesh line 16 (y)
+Minimum face area (y): 0.00694 @ mesh lines 63 | 10 (z | x)
+Maximum face area (y): 0.0353 @ mesh lines 80 | 58 (z | x)
+Minimum edge length (z): 0.0833 @ mesh line 63 (z)
+Maximum edge length (z): 0.188 @ mesh line 80 (z)
+Minimum face area (z): 0.00694 @ mesh lines 10 | 26 (x | y)
+Maximum face area (z): 0.0345 @ mesh lines 58 | 16 (x | y)
+Maximum mesh face aspect ratio (x): 2.26 : 1.0  @ mesh lines 26 | 80 (y | z)
+Maximum mesh face aspect ratio (y): 2.26 : 1.0  @ mesh lines 80 | 10 (z | x)
+Maximum mesh face aspect ratio (z): 2.25 : 1.0  @ mesh lines 58 | 26 (x | y)
+=============================================================================
+
+============================================================================
+Available resources to store TST cells: 2147262307 (970119.41% of mesh size)
+============================================================================
+
+************************************************************************************************
+General settings
+	PBA version: default
+------------------------------------------------------------------------------------------------
+Geometry processor: default
+	Geo accuracy: 4.000000
+	Watertightness check: true
+	Self intersection check: false
+	Inheritance (all): false
+	Normal dominance (all): false
+	Normal dominance (ports): false
+	Flanges hollow: true
+	One shape per flange: false
+	Multi threading: true
+		max # of threads used: 14
+		requested max # of threads: 14
+		representation: indexed
+		method: multi thread
+		retry: no
+------------------------------------------------------------------------------------------------
+Connectivity settings
+	Workflow selection: 0
+	Workflow version: 20190101
+	Gap detection: true
+	Gap detection version: 2
+	TST version: 2
+	QQ workflow: true
+	CoCo workflow: true
+	Legacy topology: false
+	Connectivity check: true
+------------------------------------------------------------------------------------------------
+************************************************************************************************
+
+------------------------------------------------------------------------------------------------
+Geometry processing log
+	PEC background is represented by CAD geometry: false
+	Background shape: used
+	Multithread portion: 100.00
+	Number of CAD shapes: 2
+	Number of lumps: 0
+------------------------------------------------------------------------------------------------
+===================================================================================================
+== CST Matrix Calculation Priority Log
+===================================================================================================
+ 
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Priority-group: 1, shape 3: </cst/Boundaries/> Low^X,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 4: </cst/Boundaries/> Low^Y,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 5: </cst/Boundaries/> Low^Z,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 6: </cst/Boundaries/> Up^X,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 7: </cst/Boundaries/> Up^Y,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 8: </cst/Boundaries/> Up^Z,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 2, shape 1: C1:Main_Outer,  material: PEC,    user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec,    shape-attributes: solid,   scheme type:FIT_TD
+Priority-group: 2, shape 2: C1:Side_Outer,  material: PEC,    user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec,    shape-attributes: solid,   scheme type:FIT_TD
+ 
+===================================================================================================
+ 
+=======================
+Finished CAD processing
+=======================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2026 May 13 (Wed):  19:49:36
+Resource usage for processing CAD model:
+	Runtime                 00:00:00.00071
+	Peak Memory Usage:               30 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+------------------------------------------------------------
+Parallelization Info
+------------------------------------------------------------
+Hyperthreading active: false
+Hyperthreading used: false
+Number of concurrent threads: 8
+Number of node domains: 8
+Domains-to-threads scaling: 2
+Average FI domain size: 2e+04
+Nice mode: true
+Delayed matrix calculation start: false
+Load balancing: Version 20090403
+Number of mesh fill domains: 12
+Memory downscale: 1
+CPU load: 57.14%
+Emptiness: 0.00%
+Hex mesh complexity: 0.20947
+Geometric complexity: 0.00080
+lower size limit of domain (1D): 60
+------------------------------------------------------------
+Node order
+4, 5, 1, 6, 3, 0, 7, 2
+------------------------------------------------------------
+
+-------------------------------------------------------------------
+Matrix calculation job submit section 0
+Currently running jobs: 0
+Waiting jobs: 8
+Concurrency for section: 8/8
+Matrix calculation node 4
+	Mesh coverage: 3267400.00 %
+	Estimated peak memory usage per node: 115 MB, tightness: 0.91 %
+	Processor group: 0
+Matrix calculation node 5
+	Mesh coverage: 3267400.00 %
+	Estimated peak memory usage per node: 105 MB, tightness: 0.84 %
+	Processor group: 0
+Matrix calculation node 1
+	Mesh coverage: 2499000.00 %
+	Estimated peak memory usage per node: 102 MB, tightness: 0.81 %
+	Processor group: 0
+Matrix calculation node 6
+	Mesh coverage: 3808000.00 %
+	Estimated peak memory usage per node: 89 MB, tightness: 0.71 %
+	Processor group: 0
+Matrix calculation node 3
+	Mesh coverage: 1927800.00 %
+	Estimated peak memory usage per node: 85 MB, tightness: 0.68 %
+	Processor group: 0
+Matrix calculation node 0
+	Mesh coverage: 2380000.00 %
+	Estimated peak memory usage per node: 80 MB, tightness: 0.63 %
+	Processor group: 0
+Matrix calculation node 7
+	Mesh coverage: 2937600.00 %
+	Estimated peak memory usage per node: 74 MB, tightness: 0.59 %
+	Processor group: 0
+Matrix calculation node 2
+	Mesh coverage: 1836000.00 %
+	Estimated peak memory usage per node: 67 MB, tightness: 0.53 %
+	Processor group: 0
+-------------------------------------------------------------------
+
+------------------------------------
+Mesh: # of points excl. TSTs: 221340
+      # of points incl. TSTs: 221340
+------------------------------------
+
+===========================================
+Data rearrangement statistics:
+Disk IO directories:	00:00:00.0002
+Disk IO node domain files:	00:00:00.0210
+Disk IO FI domain files:	00:00:00.0000
+Disk IO meta information:	00:00:00.0029
+Sequential merge (TST):	00:00:00.0000
+===========================================
+
+1xN000:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 14
+          - num accessible procs          : 14
+          - num logical procs             : 14
+          - affinity (main thread)        : 11111111111111
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - affinity                      : 11111111111111
+          - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading off
+         ==========================================================================
+
+1xN000:  ===================================================================================================
+         Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         Hex mesh: node: [hxr o(0 | 0 | 0) s(36 | 35 | 21) np (no TSTs): 26460]
+         Hex mesh: extended: [hxr o(0 | 0 | 0) s(38 | 35 | 23) np (no TSTs): 30590]
+         ===================================================================================================
+
+1xN000:  ------------------------------------------------------
+         Memory status  on node "1xN000" for matrix calculation
+         	Estimated memory consumption: 0.0798834 GB
+         	Physical memory installed: 33.8111 GB
+         	Available physical memory: 12.379 GB
+         	Available relative memory: 36.6122%s
+         ------------------------------------------------------
+
+1xN000:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2026 May 13 (Wed):  19:49:36
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN000:  ================================================================
+         Matrix computation (PBA)
+         	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+         	[GPU acceleration: off (by user)]
+         Version 2022.5 (build 20220603)
+         PBA version 2021082322
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2026 May 13 (Wed):  19:49:37
+         ================================================================
+
+1xN000:  ---------------------------------------------
+         Used point accuracy enhancement value: 4.00%.
+         ---------------------------------------------
+
+1xN000:  FARM allocation scheme: BBM
+1xN000:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+1xN000:
+1xN000:
+
+
+
+1xN000:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN000:  Port homogenization method: M2H point index deviation
+1xN000:  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         FARM/Meshfill cache is set to 8 (local FI domains: 4, dynamic: true)
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+1xN000:  =============================================================
+         Hex cell analyzer settings:
+         	max number of E fields per mesh edge: 2
+         	max number of H fields per mesh face: 4
+         	supporting dual grid: false
+         	performance improvement: ROI limit: true
+         	performance improvement: ROI threshold: 2
+         	performance improvement: single topology extraction: true
+         	performance improvement: pre-categorize cell volume: true
+         	periodic align: 0
+         	periodic cells: true
+         	homogenization version: pid
+         =============================================================
+
+1xN000:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 98.07% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 98.07
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN000:  --------------------------------------
+         Glued 0 metal grid points in port area
+         --------------------------------------
+
+1xN000:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN000:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2026 May 13 (Wed):  19:49:39
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:02.00533
+         	Peak Memory Estimation:                   80 MB
+         	Peak Memory Usage:                        56 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+1xN001:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 14
+          - num accessible procs          : 14
+          - num logical procs             : 14
+          - affinity (main thread)        : 11111111111111
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - affinity                      : 11111111111111
+          - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading off
+         ==========================================================================
+
+1xN001:  ===================================================================================================
+         Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         Hex mesh: node: [hxr o(0 | 0 | 19) s(36 | 35 | 22) np (no TSTs): 27720]
+         Hex mesh: extended: [hxr o(0 | 0 | 17) s(38 | 35 | 26) np (no TSTs): 34580]
+         ===================================================================================================
+
+1xN001:  ------------------------------------------------------
+         Memory status  on node "1xN001" for matrix calculation
+         	Estimated memory consumption: 0.101887 GB
+         	Physical memory installed: 33.8111 GB
+         	Available physical memory: 12.48 GB
+         	Available relative memory: 36.9109%s
+         ------------------------------------------------------
+
+1xN001:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2026 May 13 (Wed):  19:49:36
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN001:  ================================================================
+         Matrix computation (PBA)
+         	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+         	[GPU acceleration: off (by user)]
+         Version 2022.5 (build 20220603)
+         PBA version 2021082322
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2026 May 13 (Wed):  19:49:36
+         ================================================================
+
+1xN001:  ---------------------------------------------
+         Used point accuracy enhancement value: 4.00%.
+         ---------------------------------------------
+
+1xN001:  FARM allocation scheme: BBM
+1xN001:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+1xN001:
+1xN001:
+
+
+
+1xN001:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN001:  Port homogenization method: M2H point index deviation
+1xN001:  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         FARM/Meshfill cache is set to 8 (local FI domains: 8, dynamic: true)
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+1xN001:  =============================================================
+         Hex cell analyzer settings:
+         	max number of E fields per mesh edge: 2
+         	max number of H fields per mesh face: 4
+         	supporting dual grid: false
+         	performance improvement: ROI limit: true
+         	performance improvement: ROI threshold: 2
+         	performance improvement: single topology extraction: true
+         	performance improvement: pre-categorize cell volume: true
+         	periodic align: 0
+         	periodic cells: true
+         	homogenization version: pid
+         =============================================================
+
+1xN001:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 98.07% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 98.07
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN001:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN001:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2026 May 13 (Wed):  19:49:40
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:03.00141
+         	Peak Memory Estimation:                  102 MB
+         	Peak Memory Usage:                        62 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+1xN002:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 14
+          - num accessible procs          : 14
+          - num logical procs             : 14
+          - affinity (main thread)        : 11111111111111
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - affinity                      : 11111111111111
+          - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading off
+         ==========================================================================
+
+1xN002:  ===================================================================================================
+         Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         Hex mesh: node: [hxr o(34 | 0 | 0) s(28 | 35 | 21) np (no TSTs): 20580]
+         Hex mesh: extended: [hxr o(32 | 0 | 0) s(30 | 35 | 23) np (no TSTs): 24150]
+         ===================================================================================================
+
+1xN002:  ------------------------------------------------------
+         Memory status  on node "1xN002" for matrix calculation
+         	Estimated memory consumption: 0.0667963 GB
+         	Physical memory installed: 33.8111 GB
+         	Available physical memory: 12.346 GB
+         	Available relative memory: 36.5146%s
+         ------------------------------------------------------
+
+1xN002:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2026 May 13 (Wed):  19:49:37
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN002:  ================================================================
+         Matrix computation (PBA)
+         	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+         	[GPU acceleration: off (by user)]
+         Version 2022.5 (build 20220603)
+         PBA version 2021082322
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2026 May 13 (Wed):  19:49:37
+         ================================================================
+
+1xN002:  ---------------------------------------------
+         Used point accuracy enhancement value: 4.00%.
+         ---------------------------------------------
+
+1xN002:  FARM allocation scheme: BBM
+1xN002:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+1xN002:
+1xN002:
+
+
+
+1xN002:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN002:  Port homogenization method: M2H point index deviation
+1xN002:  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         FARM/Meshfill cache is set to 8 (local FI domains: 2, dynamic: true)
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+1xN002:  =============================================================
+         Hex cell analyzer settings:
+         	max number of E fields per mesh edge: 2
+         	max number of H fields per mesh face: 4
+         	supporting dual grid: false
+         	performance improvement: ROI limit: true
+         	performance improvement: ROI threshold: 2
+         	performance improvement: single topology extraction: true
+         	performance improvement: pre-categorize cell volume: true
+         	periodic align: 0
+         	periodic cells: true
+         	homogenization version: pid
+         =============================================================
+
+1xN002:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 98.07% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 98.07
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN002:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN002:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2026 May 13 (Wed):  19:49:38
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:01.00063
+         	Peak Memory Estimation:                   67 MB
+         	Peak Memory Usage:                        33 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+1xN003:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 14
+          - num accessible procs          : 14
+          - num logical procs             : 14
+          - affinity (main thread)        : 11111111111111
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - affinity                      : 11111111111111
+          - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading off
+         ==========================================================================
+
+1xN003:  ===================================================================================================
+         Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         Hex mesh: node: [hxr o(34 | 0 | 19) s(28 | 35 | 22) np (no TSTs): 21560]
+         Hex mesh: extended: [hxr o(32 | 0 | 17) s(30 | 35 | 26) np (no TSTs): 27300]
+         ===================================================================================================
+
+1xN003:  ------------------------------------------------------
+         Memory status  on node "1xN003" for matrix calculation
+         	Estimated memory consumption: 0.0851494 GB
+         	Physical memory installed: 33.8111 GB
+         	Available physical memory: 12.48 GB
+         	Available relative memory: 36.9109%s
+         ------------------------------------------------------
+
+1xN003:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2026 May 13 (Wed):  19:49:36
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN003:  ================================================================
+         Matrix computation (PBA)
+         	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+         	[GPU acceleration: off (by user)]
+         Version 2022.5 (build 20220603)
+         PBA version 2021082322
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2026 May 13 (Wed):  19:49:36
+         ================================================================
+
+1xN003:  ---------------------------------------------
+         Used point accuracy enhancement value: 4.00%.
+         ---------------------------------------------
+
+1xN003:  FARM allocation scheme: BBM
+1xN003:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+1xN003:
+1xN003:
+
+
+
+1xN003:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN003:  Port homogenization method: M2H point index deviation
+1xN003:  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         FARM/Meshfill cache is set to 8 (local FI domains: 4, dynamic: true)
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+1xN003:  =============================================================
+         Hex cell analyzer settings:
+         	max number of E fields per mesh edge: 2
+         	max number of H fields per mesh face: 4
+         	supporting dual grid: false
+         	performance improvement: ROI limit: true
+         	performance improvement: ROI threshold: 2
+         	performance improvement: single topology extraction: true
+         	performance improvement: pre-categorize cell volume: true
+         	periodic align: 0
+         	periodic cells: true
+         	homogenization version: pid
+         =============================================================
+
+1xN003:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 98.07% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 98.07
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN003:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN003:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2026 May 13 (Wed):  19:49:38
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:01.00856
+         	Peak Memory Estimation:                   85 MB
+         	Peak Memory Usage:                        44 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+1xN004:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 14
+          - num accessible procs          : 14
+          - num logical procs             : 14
+          - affinity (main thread)        : 11111111111111
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - affinity                      : 11111111111111
+          - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading off
+         ==========================================================================
+
+1xN004:  ===================================================================================================
+         Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         Hex mesh: node: [hxr o(0 | 0 | 39) s(32 | 35 | 32) np (no TSTs): 35840]
+         Hex mesh: extended: [hxr o(0 | 0 | 37) s(34 | 35 | 36) np (no TSTs): 42840]
+         ===================================================================================================
+
+1xN004:  ------------------------------------------------------
+         Memory status  on node "1xN004" for matrix calculation
+         	Estimated memory consumption: 0.114964 GB
+         	Physical memory installed: 33.8111 GB
+         	Available physical memory: 12.524 GB
+         	Available relative memory: 37.0411%s
+         ------------------------------------------------------
+
+1xN004:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2026 May 13 (Wed):  19:49:36
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN004:  ================================================================
+         Matrix computation (PBA)
+         	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+         	[GPU acceleration: off (by user)]
+         Version 2022.5 (build 20220603)
+         PBA version 2021082322
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2026 May 13 (Wed):  19:49:36
+         ================================================================
+
+1xN004:  ---------------------------------------------
+         Used point accuracy enhancement value: 4.00%.
+         ---------------------------------------------
+
+1xN004:  FARM allocation scheme: BBM
+1xN004:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+1xN004:
+1xN004:
+
+
+
+1xN004:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN004:  Port homogenization method: M2H point index deviation
+1xN004:  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         FARM/Meshfill cache is set to 8 (local FI domains: 8, dynamic: true)
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+1xN004:  =============================================================
+         Hex cell analyzer settings:
+         	max number of E fields per mesh edge: 2
+         	max number of H fields per mesh face: 4
+         	supporting dual grid: false
+         	performance improvement: ROI limit: true
+         	performance improvement: ROI threshold: 2
+         	performance improvement: single topology extraction: true
+         	performance improvement: pre-categorize cell volume: true
+         	periodic align: 0
+         	periodic cells: true
+         	homogenization version: pid
+         =============================================================
+
+1xN004:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 98.07% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 98.07
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN004:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN004:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2026 May 13 (Wed):  19:49:40
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:04.00098
+         	Peak Memory Estimation:                  115 MB
+         	Peak Memory Usage:                        81 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+1xN005:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 14
+          - num accessible procs          : 14
+          - num logical procs             : 14
+          - affinity (main thread)        : 11111111111111
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - affinity                      : 11111111111111
+          - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading off
+         ==========================================================================
+
+1xN005:  ===================================================================================================
+         Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         Hex mesh: node: [hxr o(30 | 0 | 39) s(32 | 35 | 32) np (no TSTs): 35840]
+         Hex mesh: extended: [hxr o(28 | 0 | 37) s(34 | 35 | 36) np (no TSTs): 42840]
+         ===================================================================================================
+
+1xN005:  ------------------------------------------------------
+         Memory status  on node "1xN005" for matrix calculation
+         	Estimated memory consumption: 0.105457 GB
+         	Physical memory installed: 33.8111 GB
+         	Available physical memory: 12.524 GB
+         	Available relative memory: 37.0411%s
+         ------------------------------------------------------
+
+1xN005:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2026 May 13 (Wed):  19:49:36
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN005:  ================================================================
+         Matrix computation (PBA)
+         	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+         	[GPU acceleration: off (by user)]
+         Version 2022.5 (build 20220603)
+         PBA version 2021082322
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2026 May 13 (Wed):  19:49:36
+         ================================================================
+
+1xN005:  ---------------------------------------------
+         Used point accuracy enhancement value: 4.00%.
+         ---------------------------------------------
+
+1xN005:  FARM allocation scheme: BBM
+1xN005:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+1xN005:
+1xN005:
+
+
+
+1xN005:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN005:  Port homogenization method: M2H point index deviation
+1xN005:  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         FARM/Meshfill cache is set to 8 (local FI domains: 8, dynamic: true)
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+1xN005:  =============================================================
+         Hex cell analyzer settings:
+         	max number of E fields per mesh edge: 2
+         	max number of H fields per mesh face: 4
+         	supporting dual grid: false
+         	performance improvement: ROI limit: true
+         	performance improvement: ROI threshold: 2
+         	performance improvement: single topology extraction: true
+         	performance improvement: pre-categorize cell volume: true
+         	periodic align: 0
+         	periodic cells: true
+         	homogenization version: pid
+         =============================================================
+
+1xN005:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 98.07% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 98.07
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN005:  --------------------------------------
+         Glued 0 metal grid points in port area
+         --------------------------------------
+
+1xN005:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN005:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2026 May 13 (Wed):  19:49:41
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:04.00273
+         	Peak Memory Estimation:                  105 MB
+         	Peak Memory Usage:                        89 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+1xN006:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 14
+          - num accessible procs          : 14
+          - num logical procs             : 14
+          - affinity (main thread)        : 11111111111111
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - affinity                      : 11111111111111
+          - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading off
+         ==========================================================================
+
+1xN006:  ===================================================================================================
+         Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         Hex mesh: node: [hxr o(0 | 0 | 69) s(36 | 35 | 33) np (no TSTs): 41580]
+         Hex mesh: extended: [hxr o(0 | 0 | 67) s(38 | 35 | 35) np (no TSTs): 46550]
+         ===================================================================================================
+
+1xN006:  ------------------------------------------------------
+         Memory status  on node "1xN006" for matrix calculation
+         	Estimated memory consumption: 0.089016 GB
+         	Physical memory installed: 33.8111 GB
+         	Available physical memory: 12.48 GB
+         	Available relative memory: 36.9109%s
+         ------------------------------------------------------
+
+1xN006:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2026 May 13 (Wed):  19:49:36
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN006:  ================================================================
+         Matrix computation (PBA)
+         	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+         	[GPU acceleration: off (by user)]
+         Version 2022.5 (build 20220603)
+         PBA version 2021082322
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2026 May 13 (Wed):  19:49:36
+         ================================================================
+
+1xN006:  ---------------------------------------------
+         Used point accuracy enhancement value: 4.00%.
+         ---------------------------------------------
+
+1xN006:  FARM allocation scheme: BBM
+1xN006:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+1xN006:
+1xN006:
+
+
+
+1xN006:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN006:  Port homogenization method: M2H point index deviation
+1xN006:  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         FARM/Meshfill cache is set to 8 (local FI domains: 4, dynamic: true)
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+1xN006:  =============================================================
+         Hex cell analyzer settings:
+         	max number of E fields per mesh edge: 2
+         	max number of H fields per mesh face: 4
+         	supporting dual grid: false
+         	performance improvement: ROI limit: true
+         	performance improvement: ROI threshold: 2
+         	performance improvement: single topology extraction: true
+         	performance improvement: pre-categorize cell volume: true
+         	periodic align: 0
+         	periodic cells: true
+         	homogenization version: pid
+         =============================================================
+
+1xN006:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 98.07% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 98.07
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN006:  --------------------------------------
+         Glued 0 metal grid points in port area
+         --------------------------------------
+
+1xN006:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN006:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2026 May 13 (Wed):  19:49:40
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:03.00907
+         	Peak Memory Estimation:                   89 MB
+         	Peak Memory Usage:                        77 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+1xN007:  ==========================================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 14
+          - num accessible procs          : 14
+          - num logical procs             : 14
+          - affinity (main thread)        : 11111111111111
+          - sockets                       : 0
+          - potential cores               : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - affinity                      : 11111111111111
+          - core list                  (3): 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading off
+         ==========================================================================
+
+1xN007:  ===================================================================================================
+         Version: 2022.5 Release from 2022-06-03 (change 981760) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, tst-nextgen, coeff, surface-imp, connectivity-tree]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         HEX Mesh information:
+         Hex mesh: node: [hxr o(34 | 0 | 69) s(28 | 35 | 33) np (no TSTs): 32340]
+         Hex mesh: extended: [hxr o(32 | 0 | 67) s(30 | 35 | 35) np (no TSTs): 36750]
+         ===================================================================================================
+
+1xN007:  ------------------------------------------------------
+         Memory status  on node "1xN007" for matrix calculation
+         	Estimated memory consumption: 0.0744138 GB
+         	Physical memory installed: 33.8111 GB
+         	Available physical memory: 12.346 GB
+         	Available relative memory: 36.5146%s
+         ------------------------------------------------------
+
+1xN007:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2026 May 13 (Wed):  19:49:37
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN007:  ================================================================
+         Matrix computation (PBA)
+         	[PERFECT BOUNDARY APPROXIMATION (PBA) (R), version: default]
+         	[GPU acceleration: off (by user)]
+         Version 2022.5 (build 20220603)
+         PBA version 2021082322
+         Sub-Workflow: FARM-1xN-TST2-Node
+         Workflow updated: -
+         2026 May 13 (Wed):  19:49:37
+         ================================================================
+
+1xN007:  ---------------------------------------------
+         Used point accuracy enhancement value: 4.00%.
+         ---------------------------------------------
+
+1xN007:  FARM allocation scheme: BBM
+1xN007:  Gap-Detection activated for FARM-topology. Gaps are resolved, even partially.: gap tolerance value is 0.001000 and mesh geometry scale is 0.001000
+1xN007:
+1xN007:
+
+
+
+1xN007:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN007:  Port homogenization method: M2H point index deviation
+1xN007:  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+         FARM/Meshfill cache is set to 8 (local FI domains: 2, dynamic: true)
+         cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+1xN007:  =============================================================
+         Hex cell analyzer settings:
+         	max number of E fields per mesh edge: 2
+         	max number of H fields per mesh face: 4
+         	supporting dual grid: false
+         	performance improvement: ROI limit: true
+         	performance improvement: ROI threshold: 2
+         	performance improvement: single topology extraction: true
+         	performance improvement: pre-categorize cell volume: true
+         	periodic align: 0
+         	periodic cells: true
+         	homogenization version: pid
+         =============================================================
+
+1xN007:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 98.07% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 98.07
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN007:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN007:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2026 May 13 (Wed):  19:49:38
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:01.00596
+         	Peak Memory Estimation:                   74 MB
+         	Peak Memory Usage:                        44 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2026 May 13 (Wed):  19:49:42
+Resource usage for parallelization control:
+	Runtime                      00:00:07.00324
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+------------------------------------------------------------------------------------------------------------------------------
+PBAMeshFeedback - InfoMap: 0[ms] - SBCell navigation: Using legacy edges - CornerCorrectionLinesAndWires: 0[ms] - Write: 0[ms]
+ConnectivityAXG - Load: 6[ms] - Setup: 3[ms] - Convert: 151[ms] ( Groups: 2 - Shapes: 2 - Threads: 14 ) - Write: 7[ms]
+------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
